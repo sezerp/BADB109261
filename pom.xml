@@ -45,8 +45,14 @@
         <plugin>
           <groupId>org.liquibase</groupId>
           <artifactId>liquibase-maven-plugin</artifactId>
+          <version>3.6.0</version>
           <configuration>
-            <propertyFile>src/main/resources/liquibase/liquibase.properties</propertyFile>
+            <defaultSchemaName>${liquibase.schema.name}</defaultSchemaName>
+            <contexts>${liquibase.context}</contexts>
+            <skip>${liquibase.disabled}</skip>
+            <changeLogFile>src/main/resources/changelog-master.xml</changeLogFile>
+            <propertyFile>${liquibase.properties.path}</propertyFile>
+            <propertyFileWillOverride>true</propertyFileWillOverride>
           </configuration>
           <executions>
             <execution>

@@ -14,7 +14,6 @@
   <artifactId>db</artifactId>
 
   <properties>
-    <liquibase.schema.name>bada</liquibase.schema.name>
     <liquibase.disabled>false</liquibase.disabled>
   </properties>
 

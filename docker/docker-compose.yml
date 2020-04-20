@@ -9,6 +9,6 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: P@swo4d
-      MYSQL_DATABASE: TR01
+      MYSQL_DATABASE: baza_danych
       MYSQL_USER: liquibase_user
       MYSQL_PASSWORD: sm@l0@t@
