@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - "3306:3306"
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: P@swo4d
+      MYSQL_DATABASE: TR01
+      MYSQL_USER: liquibase_user
+      MYSQL_PASSWORD: sm@l0@t@
