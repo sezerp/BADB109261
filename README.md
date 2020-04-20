@@ -8,7 +8,7 @@ Prerequists:
 **Important** The docker on Windows work only on Professional and Ultimate version due to not 
 supported Hyper-V technology on Windows Home Edition
 
-After installation Docker Desktop and DockerComposer go to terminal change directory to [./docker](./docker)
+After installation Docker Desktop and DockerComposer go to terminal and change directory to [./docker](./docker)
 ```bash
 cd docker
 ```
@@ -62,4 +62,6 @@ mvn -f pom.xml resources:resources liquibase:clearCheckSums liquibase:update -Pl
 As result should appear similar log
 
 ![Liquibase](./public/readme/run_liquibase.png "Liquibase output")
+
+As RDBMS recomendation is: [DataGrip](https://www.jetbrains.com/datagrip/)
   
