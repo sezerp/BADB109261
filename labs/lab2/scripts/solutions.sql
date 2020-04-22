@@ -26,7 +26,7 @@ select kod_w, wojewodztwo from wojewodztwa order by wojewodztwo asc;
 -- 10.    Wyświetl zawartość tabeli miasta
 select * miasta;
 -- 11.    Do tabeli miast wprowadź jeszcze pięć dowolnych (poprawnych) rekordów
--- w pliku migracyjnym src/main/resources/sqlFiles/lab2-003-solutions-11.sql
+-- w pliku migracyjnym src/main/resources/sqlFiles/lab2/lab2-003-solutions-11.sql
 
 
 -- 12.    Ponownie wyświetl zawartość tabeli miasta alfabetycznie
@@ -38,17 +38,17 @@ select * from miasta order by kod_w asc;
 -- 15.    Wyświetl z jakich wojewodztw są wszystkie miasta, sortując je alfabetycznie wg nazw  miast w porządku malejącym
 select * from miasta order by kod_w desc;
 -- 16.    Do tabeli osoby dodaj jeszcze jedną kolumnę – imie2.
--- src/main/resources/sqlFiles/lab2-004-add-imie2-to-osoby.sql
+-- src/main/resources/sqlFiles/lab2/lab2-004-add-imie2-to-osoby.sql
 
 
 -- 17.    Zmień dane w tabeli osoby tak, aby id_o 3 i 5 zawierały dane: Jan Włodzimierz Szczęsny i Ewa Jadwiga Wyrwa
--- src/main/resources/sqlFiles/lab2-005-update-osoby-records.sql
+-- src/main/resources/sqlFiles/lab2/lab2-005-update-osoby-records.sql
 
 
 -- 18.    Wyświetl tylko te rekordy z tabeli osoby, które nie mają pustego pola imie2
 select * from osoby where imie2 is not null;
 -- 19.    Dodaj 5 nowych (poprawnych) rekordów do tabeli osoby
--- src/main/resources/sqlFiles/lab2-006-insert-records-osoby.sql
+-- src/main/resources/sqlFiles/lab2/lab2-006-insert-records-osoby.sql
 
 
 -- 20.    Wyświetl tylko te rekordy z tabeli osoby, które mają id_o równe 3, 5 i 7
@@ -70,13 +70,13 @@ select imie, imie2, nazwisko, m.nazwa as nazwa_miasta, w.wojewodztwo
          join wojewodztwa w
              on m.kod_w = w.kod_w;
 -- 26.Wyświetl imiona, nazwiska, daty zatrudnienia i stanowiska osób zatrudnionych pomiędzy 1 stycznia 2000 roku a 31 grudnia 2001 roku
-select imie, imie2, nazwisko, e.od, e.do, e.stanowisko
-from osoby
-         join etaty e on osoby.id_osoby = e.id_osoby
-where datediff(e.od, '2000-01-01') between 0 AND datediff('2001-12-31', '2000-01-01');
-
 
 select imie, imie2, nazwisko, e.od, e.do, e.stanowisko
 from osoby
          join etaty e on osoby.id_osoby = e.id_osoby
 where e.od between  STR_TO_DATE('2000-01-01','%Y-%m-%d') AND STR_TO_DATE('2001-12-31','%Y-%m-%d');
+-- lub bardziej fancy
+select imie, imie2, nazwisko, e.od, e.do, e.stanowisko
+from osoby
+         join etaty e on osoby.id_osoby = e.id_osoby
+where datediff(e.od, '2000-01-01') between 0 AND datediff('2001-12-31', '2000-01-01');

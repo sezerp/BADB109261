@@ -9,27 +9,27 @@
     http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.8.xsd ">
 
   <changeSet id="lab-2-001" author="pzabczynski" context="local">
-    <sqlFile path="../sqlFiles/lab2-001-create-schemas.sql" relativeToChangelogFile="true" />
+    <sqlFile path="../sqlFiles/lab2/lab2-001-create-schemas.sql" relativeToChangelogFile="true" />
   </changeSet>
 
   <changeSet id="lab-2-002" author="pzabczynski" context="local">
-    <sqlFile path="../sqlFiles/lab2-002-insert-data.sql" relativeToChangelogFile="true" />
+    <sqlFile path="../sqlFiles/lab2/lab2-002-insert-data.sql" relativeToChangelogFile="true" />
   </changeSet>
 
   <changeSet id="lab-2-003" author="pzabczynski" context="local">
-    <sqlFile path="../sqlFiles/lab2-003-solutions-11.sql" relativeToChangelogFile="true" />
+    <sqlFile path="../sqlFiles/lab2/lab2-003-solutions-11.sql" relativeToChangelogFile="true" />
   </changeSet>
 
   <changeSet id="lab-2-004" author="pzabczynski" context="local">
-    <sqlFile path="../sqlFiles/lab2-004-add-imie2-to-osoby.sql" relativeToChangelogFile="true" />
+    <sqlFile path="../sqlFiles/lab2/lab2-004-add-imie2-to-osoby.sql" relativeToChangelogFile="true" />
   </changeSet>
 
   <changeSet id="lab-2-005" author="pzabczynski" context="local">
-    <sqlFile path="../sqlFiles/lab2-005-update-osoby-records.sql" relativeToChangelogFile="true" />
+    <sqlFile path="../sqlFiles/lab2/lab2-005-update-osoby-records.sql" relativeToChangelogFile="true" />
   </changeSet>
 
   <changeSet id="lab-2-006" author="pzabczynski" context="local">
-    <sqlFile path="../sqlFiles/lab2-006-insert-records-osoby.sql" relativeToChangelogFile="true" />
+    <sqlFile path="../sqlFiles/lab2/lab2-006-insert-records-osoby.sql" relativeToChangelogFile="true" />
   </changeSet>
 
 </databaseChangeLog>

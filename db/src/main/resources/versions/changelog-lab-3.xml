@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+  xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+    http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.8.xsd ">
+
+  <changeSet id="lab-3-001" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab3/lab3-001-insert-into-miasta.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-3-002" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab3/lab3-002-insert-into-firmy.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-3-003" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab3/lab3-003-insert-data-to-osoby.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-3-004" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab3/lab3-004-update-osoby.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-3-005" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab3/lab3-005-add-column-to-osoby.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-3-006" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab3/lab3-006-add-numer_budynku_column-to-firmy.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-3-007" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab3/lab3-007-modify-imie2-on-osoby.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-3-008" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab3/lab3-008-add-indexes.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+</databaseChangeLog>
