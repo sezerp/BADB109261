@@ -2,8 +2,8 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/db/baza_danych/src/main/resources/sqlFiles/lab2/lab2-001-create-schemas.sql" dialect="MariaDB" />
-    <file url="file://$PROJECT_DIR$/db/fakturowanie/src/main/resources/sqlFiles/lab6/lab6-001-create-wojewodztwa-table.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/docker/initial_scripts/001-baza_danych.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/docker/initial_scripts/002-fakturowanie.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/labs/lab6/scripts/solutions.sql" dialect="MariaDB" />
   </component>
 </project>
