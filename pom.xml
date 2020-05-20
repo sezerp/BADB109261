@@ -16,6 +16,7 @@
 
   <properties>
     <liquibase.disabled>true</liquibase.disabled>
+    <schema/>
   </properties>
 
   <dependencies>
@@ -31,7 +32,7 @@
       <id>local</id>
       <properties>
         <liquibase.properties.path>
-          src/main/resources/configuration/liquibase-local.properties
+          ${schema}/src/main/resources/configuration/liquibase-local.properties
         </liquibase.properties.path>
         <liquibase.context>local</liquibase.context>
       </properties>
@@ -50,7 +51,7 @@
             <defaultSchemaName>${liquibase.schema.name}</defaultSchemaName>
             <contexts>${liquibase.context}</contexts>
             <skip>${liquibase.disabled}</skip>
-            <changeLogFile>src/main/resources/changelog-master.xml</changeLogFile>
+            <changeLogFile>${schema}/src/main/resources/changelog-master.xml</changeLogFile>
             <propertyFile>${liquibase.properties.path}</propertyFile>
             <propertyFileWillOverride>true</propertyFileWillOverride>
           </configuration>

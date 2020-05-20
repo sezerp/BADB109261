@@ -1,0 +1,23 @@
+INSERT INTO asortyment (id_a, produkt, jm, cena, vat)
+VALUES
+(1, 'gwoździe 5 calowe', 'kg', 23, 0.23),
+(2, 'drut stalowy', 'm', 67.60, 0.23),
+(3, 'śruba fi 18', 'szt.', 5, 0.23),
+(4, 'sruba fi 22', 'szt.', 7.90, 0.23),
+(5, 'lina stalowa', 'm', 29, 0.23),
+(6, 'teownik', 'szt.', 53, 0.23),
+(7, 'cegła klinkierowa', 'szt.', 8.2, 0.23),
+(8, 'kostka brukowa', 'm2', 59.89, 0.23),
+(9, 'glazura', 'm2', 99.99, 0.23),
+(10, 'gres', 'm2', 89, 0.23),
+(11, 'terakota', 'm2', 78, 0.23),
+(12, 'farba akrylowa', 'l', 123, 0.23),
+(13, 'rozpuszczalnik', 'l', 16.5, 0.23),
+(14, 'listwa', 'szt.', 12.3, 0.23),
+(15, 'panele pod³ogowe', 'm2', 97.01, 0.23),
+(16, 'kątownik', 'szt.', 23, 0.23),
+(17, 'cegła zwyk³a', 'szt.', 5.09, 0.23),
+(18, 'wieźba dachowa', 'kg', 20, 0.23),
+(19, 'płyta kartonowo-gipsowa', 'm2', 60.06, 0.23),
+(20, 'uszczelka fi 52mm', 'szt.', 8.97, 0.23),
+(21, 'uszczelka fi 44mm', 'szt.', 7.99, 0.23);

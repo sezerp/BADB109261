@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+  xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+    http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.8.xsd ">
+
+
+  <changeSet id="lab-6-001" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab6/lab6-001-create-wojewodztwa-table.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-6-002" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab6/lab6-002-insert-data-into-wojewodztwa.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-6-003" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab6/lab6-003-create-miasta-table.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-6-004" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab6/lab6-004-insert-data-into-miasta.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-6-005" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab6/lab6-005-create-kontrahenci-table.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-6-006" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab6/lab6-006-insert-data-into-kontrachenci.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-6-007" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab6/lab6-007-create-faktury-table.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-6-008" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab6/lab6-008-insert-data-into-faktury.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-6-009" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab6/lab6-009-create-asortyment-table.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-6-010" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab6/lab6-010-insert-data-into-asortyment.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-6-011" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab6/lab6-011-create-pozycje-table.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-6-012" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab6/lab6-012-insert-data-into-pozycje.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+</databaseChangeLog>
