@@ -57,9 +57,11 @@ As the migration tool is chosen [Liquibase](https://www.liquibase.org/)
 To start migration run:
 
 ```bash
-mvn -f pom.xml resources:resources liquibase:clearCheckSums liquibase:update -Plocal -X
+mvn -f pom.xml resources:resources liquibase:clearCheckSums liquibase:update -Plocal -Dschema='<schema_name>' -X
 ```
 As result should appear similar log
+
+`mvn -f pom.xml resources:resources liquibase:clearCheckSums liquibase:update -Plocal -Dschema='fakturowanie'`
 
 ![Liquibase](./public/readme/run_liquibase.png "Liquibase output")
 
