@@ -1,0 +1,6 @@
+CREATE TABLE logi
+(
+    id_log INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    operacja VARCHAR(100) NOT NULL,
+    czas TIMESTAMP(0) NOT NULL
+);

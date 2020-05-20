@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+  xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+    http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.8.xsd ">
+
+
+  <changeSet id="lab-7-001" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab7/lab7-001-TABLE_LOGI.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-7-002" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab7/lab7-002-TRIGGER_BEFORE_INSERT_MIASTA.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-7-003" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab7/lab7-003-TRIGGER_AFTER_INSERT_MIASTA.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-7-004" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab7/lab7-004-TRIGGER_BEFORE_DELETE_MIASTA.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-7-005" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab7/lab7-005-TRIGGER_AFTER_DELETE_MIASTA.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-7-006" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab7/lab7-006-TRIGGER_BEFORE_UPDATE_MIASTA.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+  <changeSet id="lab-7-007" author="pzabczynski" context="local">
+    <sqlFile path="../sqlFiles/lab7/lab7-007-TRIGGER_AFTER_UPDATE_MIASTA.sql" relativeToChangelogFile="true" />
+  </changeSet>
+
+</databaseChangeLog>
